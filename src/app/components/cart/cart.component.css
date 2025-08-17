@@ -1,0 +1,25 @@
+.cart-item {
+  background-color: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.cart-item:hover {
+  background-color: #e9ecef;
+}
+
+.cart-item-image {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.sticky-top {
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  .sticky-top {
+    position: relative !important;
+    top: auto !important;
+  }
+}

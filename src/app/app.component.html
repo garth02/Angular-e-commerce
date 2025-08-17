@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="fas fa-shopping-cart me-2"></i>
+      {{ title }}
+    </a>
+    
+    <div class="navbar-nav ms-auto">
+      <span class="navbar-text">
+        <i class="fas fa-shopping-bag me-1"></i>
+        Cart Items: <span class="badge bg-light text-dark">{{ cartItemCount }}</span>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <app-product-list></app-product-list>
+    </div>
+    
+    <div class="col-lg-4">
+      <app-cart></app-cart>
+    </div>
+  </div>
+</div>
