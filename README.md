@@ -1,59 +1,75 @@
-# AngularEcommerceCart
+# Angular E-commerce Garvez
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+# Overview
+A simplified e-commerce cart application built with Angular that demonstrates proficiency in JavaScript (ES6+), DOM manipulation, API integration, modular code structure, and unit testing.
 
-## Development server
+# Features Implemented
 
-To start a local development server, run:
+# 1. Product Listing
+- Fetches products from a mock API service
+- Displays product name, image, price
+- Quantity input field for each product
+- "Add to Cart" button functionality
 
+# 2. Cart Functionality
+- Add items to cart with specified quantity
+- Automatic quantity increment for existing items
+- Cart summary showing:
+  - Product details (name, image, quantity)
+  - Individual item totals
+  - Grand total calculation
+- Coupon system with "SAVE10" code
+  - Applies to items $100 and above
+  - Maximum $50 discount per eligible item
+
+# 3. Cart Persistence
+- Cart data persists across page reloads using localStorage
+- Automatic cart restoration on app initialization
+
+# 4. Code Quality
+- Modern Angular with TypeScript
+- Modular service-based architecture
+- Reactive programming with RxJS
+- Clean, readable, and testable code structure
+- Separation of concerns with services and components
+
+## Setup Instructions
+# Prerequisites
+- Node.js (v16 or higher)
+- Angular CLI (`npm install -g @angular/cli`)
+
+### Installation
+1. Clone or extract the project files
+2. Navigate to the project directory
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
 ```bash
 ng serve
 ```
+Navigate to `http://localhost:4200/`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Assumptions Made
+1. Product data is served from a mock service (no real backend)
+2. Cart persistence uses localStorage 
+3. Coupon "SAVE10" is the only implemented coupon code
+4. Currency is displayed in USD format
+5. No user authentication required
+6. No checkout/payment flow implementation needed
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## Time Spent
+Approximately 24 hours
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Future Enhancements
+- Add product search and filtering
+- Implement multiple coupon types
+- Add product categories
+- Enhanced error handling
+- Backend API integration
+- User authentication
+- Order history
