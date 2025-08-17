@@ -1,6 +1,8 @@
 # Angular E-commerce Garvez
 
 # Overview
+<img width="1901" height="862" alt="Screenshot 2025-08-17 234632" src="https://github.com/user-attachments/assets/a2a2efc3-c3e0-4e57-ad6d-1221bf92adbb" />
+
 A simplified e-commerce cart application built with Angular that demonstrates proficiency in JavaScript (ES6+), DOM manipulation, API integration, modular code structure, and unit testing.
 
 # Features Implemented
